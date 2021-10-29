@@ -1,7 +1,7 @@
 import Axios from 'axios';
 
 const BASE_URL = (process.env.NODE_ENV === 'production') ? '/' : 'https://';
-const BASE_URL_NETLIFY = (process.env.NODE_ENV === 'production') ? '/' : '';
+const BASE_URL_NETLIFY =  '';
 
 const axios = Axios.create({
     withCredentials: false
