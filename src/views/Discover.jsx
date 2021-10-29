@@ -12,7 +12,7 @@ import { FiRefreshCcw } from "react-icons/fi";
 export class Discover extends Component {
 
     state = {
-        citiesList: ['New York', 'Bangkok', 'Tokyo', 'Jakarta', 'Jerusalem', 'London', 'Austin', 'Manila', 'Bogota', 'Moscow'],
+        citiesList: ['New York', 'Bangkok', 'Tokyo', 'Jakarta', 'Jerusalem', 'London', 'Austin', 'Manila', 'Bogota', 'Moscow','Rome','Barcelona'],
         citiesToShowCount: 4,
         searchedCityData: {},
         isShowSpinner: false,
