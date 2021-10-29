@@ -11,8 +11,8 @@
         margin-top: 0;
     }
     .circle-weather{
-        width: 27vw;
-        height: 27vw;
+        width: 150px;
+        height: 150px;
         margin: 20px 0px;
     }
 
@@ -48,6 +48,15 @@
         font-weight: bold;
         & :first-child{
             margin-right: 10px;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .my-location-template{
+        .circle-weather{
+            width: 27vw;
+            height: 27vw;
         }
     }
 }

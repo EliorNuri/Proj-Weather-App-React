@@ -39,7 +39,8 @@ function formatTemp(temp) {
 }
 
 function formatPercentage(value) {
-    return value ? value + '%' : NA_PLACEHOLDER;
+    //Production Config
+    return value && value !== undefined ? value + '%' : NA_PLACEHOLDER;
 }
 
 

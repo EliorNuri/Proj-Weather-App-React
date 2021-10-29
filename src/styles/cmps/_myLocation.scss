@@ -17,9 +17,19 @@
     .circle-weather{
         height: 45vw;
         width: 45vw;
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 200px;
+        max-height: 200px;
         box-shadow: 0px 0 15px var(--clr-cirlce-shadow-opt1);
         justify-self: center;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:500px) {
+    .my-location-container{
+        .circle-weather{
+            max-width: 250px;
+            max-height: 250px;
+        }
     }
 }

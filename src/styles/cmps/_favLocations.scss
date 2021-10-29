@@ -8,6 +8,9 @@
     }
     .location-weather-tab:nth-child(odd){
         background-color: rgb(41, 70, 87);
+        &:hover{
+            background-color: rgb(73, 91, 102);
+        }
     }
 
     .fav-locations-placeholder{
