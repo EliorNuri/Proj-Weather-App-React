@@ -1,0 +1,28 @@
+.app-menu{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 8px;
+    width: 100vw;
+    background-color: var(--clr-app-background-opacity-lvl2);
+    backdrop-filter: blur(30px);
+    border-top: none;
+    z-index: 9999;
+    .app-menu-icon{
+        font-size: 1.5rem;
+        color: var(--clr-txt-secondary);
+        cursor: pointer;
+        &:last-child{
+            color:var(--clr-txt-primary);
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .app-menu{
+        border-top: 1px solid rgb(16, 56, 80);
+        backdrop-filter: blur(0px) !important;
+        background-color: var(--clr-app-background);
+
+    }
+}

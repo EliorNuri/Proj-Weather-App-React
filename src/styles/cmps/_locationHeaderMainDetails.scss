@@ -1,0 +1,36 @@
+.location-main-details-container{
+    min-height: 35vh;
+    height: 35vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    
+    & .location-details{
+        z-index: 100;
+        padding: 30px 10px 45px 40px;
+        & >:nth-child(1){
+            text-transform: capitalize;
+            font-size: 1.3rem;
+        }
+        & >:nth-child(2){
+            font-size:3.5rem;
+
+        }
+        & .weather-type+.icon-wrapper{
+            margin-left: 15px;
+            font-size: 1.8rem;
+        }
+    }
+
+
+    & .circle-weather{
+        height: 35vh;
+        width: 35vh;
+        position: absolute;
+        top: -20%;
+        right: -26%;
+    }
+
+}

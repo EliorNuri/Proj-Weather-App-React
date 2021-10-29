@@ -1,0 +1,53 @@
+.discover-container{
+    padding: 30px 30px 50px 30px ;
+    height: 100vh;
+    max-height: 100vh;
+    & > * {
+        margin-bottom: 15px;
+    }
+
+    .refresh-btn-wrapper{
+        font-size: 0.8rem;
+        padding: 5px 8px;
+        background-color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        color: var(--clr-feature-primary);
+        & :first-child{
+            margin-right: 4px;
+        }
+    }
+
+    .sub-title + div{
+        align-items: stretch;
+        flex: 5;
+    }
+
+    .my-location-search, & >:last-child{
+        flex: 2;
+        margin-bottom: 15px;
+    }
+
+    .location-list-container{
+        margin-bottom: 0px;
+    }
+
+    .arrow-container{
+        @include flex-row-center;
+        align-items: flex-start;
+        width: 100%;
+        max-height: 40px;
+        & > * {
+            font-size: 2rem;
+            border-radius: 200px;
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            margin-top: 0px;
+            color: var(--clr-feature-primary);
+            cursor: pointer;
+        }
+    }
+
+
+}

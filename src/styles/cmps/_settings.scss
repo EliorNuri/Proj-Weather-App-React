@@ -1,0 +1,55 @@
+.settings-container{
+    min-height: 100vh;
+    padding: 30px 20px 50px 20px;
+    .setting-title{
+        font-size: 1.3rem;
+        padding-bottom: 15px;
+    }
+    .row-setting-key{
+        margin-bottom: 15px;
+    }
+    .row-setting{
+        font-size: 0.9rem;
+        color: var(--clr-txt-grey);
+    }
+    .settings-header {
+        width: 100%;
+        span{
+            margin : 0px;
+        }
+        .base-btn{
+            background-color: var(--clr-checked-color);
+            color: white;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            border-radius:2px;
+        }
+    }
+    .video-toggle{
+        margin-left: 10px;
+        & > *:nth-child(1) {
+            border-radius: 20px 0px 0px 20px;
+        }
+        & > *:nth-child(2) {
+            border-radius: 0px 20px 20px 0px;
+        }
+        span{
+            @include flex-row-center;
+            padding: 10px;
+            background-color: white;
+            font-size: 1.2rem;
+            min-width: 70px;
+            cursor: pointer;
+        }
+    }
+    .sub-title.alert, .sub-title.success{
+        font-size: 0.8rem;
+        margin: 5px;
+    }
+    .sub-title.alert{
+        color: rgb(247, 125, 125);
+    }
+    .sub-title.success{
+        color: rgb(71, 252, 131);
+    }
+}

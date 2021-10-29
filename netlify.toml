@@ -1,0 +1,9 @@
+
+[build]
+    functions = "functions"
+
+[[redirects]]
+    from = "/api/*"
+    to= "/.netlify/functions/:splat/:type"
+    query = {type = ":type"}
+    status = 200

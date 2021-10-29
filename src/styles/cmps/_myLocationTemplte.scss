@@ -1,0 +1,53 @@
+.my-location-template{
+    width: 100%;
+    & > * {
+        margin: 5px 0px;
+        text-align: center;
+    }
+
+    .current-location-title{
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        margin-top: 0;
+    }
+    .circle-weather{
+        width: 27vw;
+        height: 27vw;
+        margin: 20px 0px;
+    }
+
+    .weather-type{
+        width: fit-content;
+        background-color: rgb(54, 51, 97);
+        padding: 5px 12px;
+        font-size: 0.9rem;
+
+    }
+    
+    .weather-temp{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .extended-info-row{
+        padding: 0px;
+        font-size: 0.9rem;
+        justify-content: space-evenly;
+        .icon-wrapper{
+            .icon-img{
+                margin-right: 4px;
+            }
+        }
+    }
+
+    .row-setting{
+        margin-bottom: 20px;
+    }
+
+    .base-btn{
+        font-weight: bold;
+        & :first-child{
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.search-container{
+    background-color: var(--clr-feature-primary);
+    padding: 0px 5px;
+    border-radius: 200px;
+    & > * {
+        color: white;
+        background-color: transparent;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    input{
+        flex: 1;
+        padding: 8px 5px;
+        border: none;
+        text-transform: capitalize;
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+            opacity: 1; /* Firefox */
+            font-size: 0.8rem;
+        }
+    }
+    span{
+        width: 30px;
+    }
+}

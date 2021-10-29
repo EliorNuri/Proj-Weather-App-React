@@ -1,0 +1,14 @@
+.today-weather-data{
+    color: var(--clr-txt-primary);
+    .hourly-data{
+        & > * {
+            margin-bottom: 10px;
+        }
+        .hourly-dt{
+            font-size: 0.8rem;
+        }
+        .hourly-temp{
+            font-size: 1.4rem;
+        }
+    }
+}

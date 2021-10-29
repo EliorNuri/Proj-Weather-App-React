@@ -1,0 +1,28 @@
+@import './setup/typo';
+@import './setup/vars';
+@import './setup/func';
+@import './setup/mixins';
+
+@import './basic/base';
+@import './basic/helpers';
+
+@import './cmps/appMenu.scss';
+@import './cmps/locationHeaderMainDetails';
+@import './cmps/circleWeather';
+@import './cmps/extendedInfoRow';
+@import './cmps/sunriseSunsetCmps';
+@import './cmps/dailyTemps';
+@import './cmps/homepage';
+@import './cmps/hourlyTemp';
+@import './cmps/moreWeatherDetailsSection';
+@import './cmps/discover';
+@import './cmps/searchCmp';
+@import './cmps/locationWeatherTab';
+@import './cmps/spinner';
+@import './cmps/locationWeatherDetails';
+@import './cmps/favLocations';
+@import './cmps/myLocation';
+@import './cmps/myLocationTemplte';
+@import './cmps/locationHeaderMainDetailsMobileView';
+@import './cmps/locationFavoritesBtn';
+@import './cmps/settings' ;

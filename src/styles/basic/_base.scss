@@ -1,0 +1,202 @@
+* { 
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: var(--clr-txt-primary);
+    font-family: var(--app-base-font);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body,p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+button, .btn{
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.App{
+    //background:linear-gradient(to right,rgba(119, 1, 1, 0.301) 450px, rgba(119, 1, 1, 0.301) ,rgba(0, 0, 0, 0.295)), url('../assets/Imgs/background-2.jpg');
+    //background:linear-gradient(to right,var(--clr-app-background-opacity-lvl1) 450px,var(--clr-app-background-opacity-lvl2),var(--clr-app-background-opacity-lvl2)), url('../assets/Imgs/background-4.jpg');
+    min-height: 100vh;
+    @include img-default;
+    background-attachment: fixed;
+    position: relative;
+    & > * {
+        flex: 1;
+    }
+    & > *:not(video) {
+        @include container-desktop-view;
+        backdrop-filter: blur(40px);
+    }
+    .main-details-desktop-view{
+        position: fixed;
+        bottom: 150px;
+        right: 150px;
+    }
+
+    video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+
+.homepage-container, .location-weather-details-container, .settngs-container{
+    padding-bottom: 50px;
+    .today-weather-data , .weekly-weather-data, .more-weather-details-container{
+        padding: 10px 30px;
+    }
+}
+
+.sub-title{
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: var(--clr-txt-grey);
+    &.alert, &.success{
+        color: white;
+        margin: auto;
+        font-size: 1.3rem;
+    }
+    &.weather-statistics-header{
+        font-size: 2rem;
+        padding: 60px 30px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+}
+
+.weather-type{
+    font-size:1rem;
+    border-radius: 200px;
+    background: var(--clr-feature-primary);
+    @include elemnt-base-padding;
+}
+
+.icon-wrapper{
+    @include flex-row-center;
+}
+
+.weather-icon{
+    font-size: 1.5rem;
+    width: 20px;
+    height: 20px;
+    color: var(--clr-feature-secondary);
+}
+
+.base-btn{
+    font-size: 0.8rem;
+    padding: 7px 8px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--clr-feature-primary);
+    font-weight: bold;
+    & :first-child{
+        margin-right: 4px;
+    }
+}
+
+
+
+.line-sperator{
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    height: 2px;
+    min-height: 2px;
+    max-height: 2px;
+    border-radius: 200px;
+    background-color: var(--clr-searched-location);
+    padding: 0px;
+    align-self: center;
+}
+
+.input-field-wrapper{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    border:2px solid var(--clr-feature-secondary);
+    color: white;
+    padding: 3px;
+    & > *:first-child{
+        margin:0px 10px 0px 20px;
+    }
+}
+
+.row-setting{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    &.row-setting-0{
+        margin-top: 40px;
+    }
+    .row-setting-val{
+        color: var(--clr-txt-grey);
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    .settings-input{
+        background-color: var(--clr-app-background);
+        width: 100%;
+        padding: 7px;
+        border: 0px solid transparent;
+        color: white;
+        font-size: 1rem;
+    }
+    .settings-input-icon svg{
+        color: white;
+    }
+}
+
+
+@media (max-width:850px) {
+    .App{
+        & > *:not(.main-details-desktop-view) {
+            max-width: 100vw;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    html{
+        font-size: 16px;
+    }
+    .App{
+        background:var(--clr-app-background);
+        & > *:not(.main-details-desktop-view) {
+            backdrop-filter: blur(0px);
+        }
+        video{
+            display: none;
+        }
+    }
+}

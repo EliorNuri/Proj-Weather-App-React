@@ -1,0 +1,27 @@
+.favLocation-container{
+    padding: 30px 20px 50px 20px;
+    min-height: 100vh;
+    &.container-flex{
+        @include flex-column-center;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .location-weather-tab:nth-child(odd){
+        background-color: rgb(41, 70, 87);
+    }
+
+    .fav-locations-placeholder{
+        flex: 1;
+        width: 100%;
+        // background: linear-gradient(to top, rgba(8, 27, 38, 0.9),rgba(8, 27, 38, 0.5)),url('https://images.pexels.com/photos/2668314/pexels-photo-2668314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        // @include img-default;
+        @include flex-column-center;
+        & > :first-child {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        .base-btn{
+            font-size: 1rem;
+        }
+    }
+}

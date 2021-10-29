@@ -1,0 +1,35 @@
+@mixin img-default{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin clean-list { 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin elemnt-base-padding {
+    padding: 8px 12px;
+}
+
+@mixin container-desktop-view {
+    max-width: 550px;
+}
+
+/* Flex Mixins */
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,40 @@
+.weekly-weather-data{
+    width: 100vww;
+    & > * {
+        width: 100%;
+    }
+    & > *:not(:nth-child(1)) {
+        margin-bottom: 20px;
+    }
+
+    .daily-data-wrapper{
+
+        & > *:nth-child(2){
+            width: 40px;
+            min-width: 40px;
+            max-width: 40px;
+
+        }
+
+        & > *:first-child , & > *:last-child{
+            flex: 1;
+        }
+
+        .temp-container{
+            & > * {
+                margin-left: 20px;
+            }
+
+            & > *:first-child{
+                font-size: 1.1rem;
+            }
+
+            & > *:last-child{
+                color: var(--clr-txt-grey);
+                font-weight: bolder;
+
+            }
+        }
+    }
+    
+}

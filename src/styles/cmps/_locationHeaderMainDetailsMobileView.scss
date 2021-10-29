@@ -1,0 +1,17 @@
+.location-main-details-alt{
+    padding: 60px 30px;
+    & >:first-child{
+        font-size: 2rem;
+        color: var(--clr-txt-grey);
+        font-weight: bold;
+    }
+    & >:nth-child(2){
+        font-size: 4rem;
+        font-weight: bold;
+        margin: 10px 0px;
+    }
+    .fav-btn{
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+}

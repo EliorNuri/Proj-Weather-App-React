@@ -1,0 +1,52 @@
+.sunrise-sunset-container{
+    height: 110px;
+    max-height: 110px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 20px 0px 0px 0px;
+    .recharts-responsive-container{
+        height: 70% !important;
+
+        .recharts-layer .recharts-line-dots{
+            circle{
+                display: none;
+            }
+        }
+    }
+    .sunrise-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 10px;
+    }
+    .sunset-content{
+        position: absolute;
+        bottom: 40%;
+        right: 0;
+        margin: 10px;
+    }
+
+    .inner-time-circle{
+        width: 15px;
+        height: 15px;
+        border-radius: 200px;
+        margin: 0px 10px;
+        
+        &.sunrise-circle{
+            background-color: rgb(255,231,180);
+            box-shadow: 0px 0px 3px 1px rgb(255,231,180);
+        }
+        &.sunset-circle{
+            background-color: rgb(237,90,154);
+            box-shadow: 0px 0px 3px 1px rgb(237,90,154);
+        }
+    }
+    .inner-time-content{
+        font-size: 0.8rem;
+        color: var(--clr-txt-secondary);
+        letter-spacing: 1px;
+    }
+}
