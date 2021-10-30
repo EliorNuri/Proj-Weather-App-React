@@ -1,4 +1,4 @@
-# Weather App created with React
-Using openweathermap API and Netlify as hosting service
+## Weather App created with React
+Using openweathermap API and Netlify as hosting service - Mobile First Design Approach
 
-## https://mygeoweatherapp.netlify.app/#/
+### https://mygeoweatherapp.netlify.app/#/
