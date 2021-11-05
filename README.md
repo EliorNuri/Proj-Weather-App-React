@@ -1,4 +1,5 @@
 ## Weather App created with React and Redux As state management
-Using openweathermap API and Netlify as hosting service -##  Mobile First Design Approach
+## - Mobile First Design Approach -
+Using openweathermap API and Netlify as hosting service 
 
 ### https://mygeoweatherapp.netlify.app/#/
